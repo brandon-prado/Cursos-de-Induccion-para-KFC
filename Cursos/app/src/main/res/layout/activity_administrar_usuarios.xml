@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        tools:context=".AdminUsuariosActivity">
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="383dp"
+            android:layout_height="51dp"
+            android:fontFamily="monospace"
+            android:text="Usuarios"
+            android:textAlignment="center"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgLibro"
+            android:layout_width="378dp"
+            android:layout_height="186dp"
+            android:layout_gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/subtitulo"
+            app:srcCompat="@drawable/usuarios" />
+
+        <TextView
+            android:id="@+id/subtitulo"
+            android:layout_width="376dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="16dp"
+            android:text="Control de altas, bajas y modificaciones de usuarios"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titulo" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/imgLibro"
+            tools:layout_editor_absoluteX="16dp">
+
+            <TextView
+                android:id="@+id/etiquetaNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="* Nombre (s):"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtNombres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Si tienes más de un nombre ingrésalo" />
+
+            <TextView
+                android:id="@+id/etiquetaApellido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="* Apellido (s):"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtApellidos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtNombres"
+                android:inputType="text"
+                android:hint="Si usas más de un apellido ingrésalo" />
+
+            <TextView
+                android:id="@+id/etiquetaGenero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="* Género:"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinnerGenero"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Sexo" />
+
+            <TextView
+                android:id="@+id/etiquetaCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="* Correo electrónico:"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtCorreoR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="correo@kfc.com" />
+
+            <TextView
+                android:id="@+id/etiquetaContrasena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="* Contraseña:"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtContrasenaR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtCorreoR"
+                android:hint="Usa una contraseña segura"
+                android:inputType="textPassword" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnAgregar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="12sp"
+                    android:backgroundTint="@color/kfc_red"
+                    android:textColor="@android:color/white"
+                    app:icon="@android:drawable/ic_menu_save"
+                    app:iconGravity="textStart" />
+
+                <Button
+                    android:id="@+id/btnModificar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="12sp"
+                    android:backgroundTint="@color/kfc_red"
+                    android:textColor="@android:color/white"
+                    app:icon="@android:drawable/ic_menu_edit"
+                    app:iconGravity="textStart" />
+
+                <Button
+                    android:id="@+id/btnEliminar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="12sp"
+                    android:backgroundTint="@color/kfc_red"
+                    android:textColor="@android:color/white"
+                    app:icon="@android:drawable/ic_menu_delete"
+                    app:iconGravity="textStart" />
+
+                <Button
+                    android:id="@+id/btnLimpiar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/kfc_red"
+                    android:textColor="@android:color/white"
+                    app:icon="@drawable/escoba"
+                    app:iconGravity="textStart" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnListarRegistros"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Ver registros"
+                    android:backgroundTint="@color/kfc_red"
+                    android:textColor="@android:color/white"
+                    app:icon="@android:drawable/ic_menu_view"
+                    app:iconGravity="textStart" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

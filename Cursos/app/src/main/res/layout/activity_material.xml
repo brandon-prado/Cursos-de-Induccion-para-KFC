@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        tools:context=".MaterialActivity">
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="383dp"
+            android:layout_height="60dp"
+            android:fontFamily="monospace"
+            android:text="¿Qué proceso deseas aprender hoy?"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/subtitulo"
+            android:layout_width="376dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="16dp"
+            android:text="Selecciona el curso que deseas iniciar:"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titulo" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/subtitulo"
+            tools:layout_editor_absoluteX="16dp">
+
+            <ImageButton
+                android:id="@+id/imgBtnCurso1"
+                android:layout_width="210dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_rounded_gray"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/bisquet" />
+
+            <TextView
+                android:id="@+id/etiquetaCurso1"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:text="Bisquet"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/imgBtnCurso1" />
+
+            <ImageButton
+                android:id="@+id/imgBtnCurso2"
+                android:layout_width="210dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:background="@drawable/button_rounded_gray"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/cruji" />
+
+            <TextView
+                android:id="@+id/etiquetaCurso2"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:text="Cruji"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/imgBtnCurso2" />
+
+            <ImageButton
+                android:id="@+id/imgBtnCurso3"
+                android:layout_width="210dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:background="@drawable/button_rounded_gray"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/ensalada" />
+
+            <TextView
+                android:id="@+id/etiquetaCurso3"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:text="Ensalada"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/imgBtnCurso3" />
+
+            <ImageButton
+                android:id="@+id/imgBtnCurso4"
+                android:layout_width="210dp"
+                android:layout_height="250dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_rounded_gray"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/cono" />
+
+            <TextView
+                android:id="@+id/etiquetaCurso4"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:text="Ke Cono"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/imgBtnCurso4" />
+
+            <ImageButton
+                android:id="@+id/imgBtnCurso5"
+                android:layout_width="210dp"
+                android:layout_height="220dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:background="@drawable/button_rounded_gray"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/popcorn" />
+
+            <TextView
+                android:id="@+id/etiquetaCurso5"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:text="Popcorn"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/imgBtnCurso5" />
+
+            <ImageButton
+                android:id="@+id/imgBtnCurso6"
+                android:layout_width="210dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:background="@drawable/button_rounded_gray"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/pure_papa" />
+
+            <TextView
+                android:id="@+id/etiquetaCurso6"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:text="Puré de papa"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/imgBtnCurso6" />
+
+            <ImageButton
+                android:id="@+id/imgBtnCurso7"
+                android:layout_width="210dp"
+                android:layout_height="170dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_rounded_gray"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/salsa_morena" />
+
+            <TextView
+                android:id="@+id/etiquetaCurso7"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:text="Salsa morena"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/imgBtnCurso7" />
+
+            <ImageButton
+                android:id="@+id/imgBtnCurso8"
+                android:layout_width="210dp"
+                android:layout_height="140dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_rounded_gray"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/pay" />
+
+            <TextView
+                android:id="@+id/etiquetaCurso8"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:text="Pay de manzana"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/imgBtnCurso8" />
+
+            <ImageButton
+                android:id="@+id/imgBtnCurso9"
+                android:layout_width="210dp"
+                android:layout_height="210dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:background="@drawable/button_rounded_gray"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/churro_bites" />
+
+            <TextView
+                android:id="@+id/etiquetaCurso9"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:text="Churro bites"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/imgBtnCurso9" />
+
+            <ImageButton
+                android:id="@+id/imgBtnCurso10"
+                android:layout_width="210dp"
+                android:layout_height="210dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:background="@drawable/button_rounded_gray"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/kreamball" />
+
+            <TextView
+                android:id="@+id/etiquetaCurso10"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:text="Kreamball"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/imgBtnCurso10" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

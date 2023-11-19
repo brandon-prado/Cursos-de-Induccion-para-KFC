@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        tools:context=".RegistrarUsuarioActivity">
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="383dp"
+            android:layout_height="51dp"
+            android:fontFamily="monospace"
+            android:text="@string/registro_de_usuario"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextSizeCheck" />
+
+        <ImageView
+            android:id="@+id/imgUsuario"
+            android:layout_width="378dp"
+            android:layout_height="186dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/todo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titulo"
+            app:srcCompat="@drawable/usuarios"
+            tools:ignore="ImageContrastCheck" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/imgUsuario"
+            tools:layout_editor_absoluteX="16dp">
+
+            <TextView
+                android:id="@+id/etiquetaTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/ingresa_la_informaci_n_necesaria"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/titulo" />
+
+            <TextView
+                android:id="@+id/etiquetaNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nombre_s"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtNombres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/si_tienes_m_s_de_un_nombre_ingr_salo"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:textColorHint="#8D6E63"
+                android:autofillHints=""
+                tools:ignore="VisualLintTextFieldSize" />
+
+            <TextView
+                android:id="@+id/etiquetaApellido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/apellido_s"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtApellidos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:hint="@string/si_usas_m_s_de_un_apellido_ingr_salo"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:textColorHint="#8D6E63"
+                tools:ignore="VisualLintTextFieldSize" />
+
+            <TextView
+                android:id="@+id/etiquetaGenero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/g_nero"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinnerGenero"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="@string/sexo" />
+
+            <TextView
+                android:id="@+id/etiquetaCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/correo_electr_nico"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtCorreoR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/correo_kfc_com"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:textColorHint="#8D6E63"
+                android:autofillHints=""
+                tools:ignore="VisualLintTextFieldSize" />
+
+            <TextView
+                android:id="@+id/etiquetaContrasena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/contrase_a"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtContrasenaR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/usa_una_contrase_a_segura"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:textColorHint="#8D6E63"
+                android:autofillHints=""
+                tools:ignore="VisualLintTextFieldSize" />
+
+            <Button
+                android:id="@+id/btnRegistrarse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/kfc_red"
+                android:text="@string/registrarse"
+                android:textColor="#000000"
+                tools:ignore="VisualLintButtonSize" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/ya_tienes_una_cuenta" />
+
+                <TextView
+                    android:id="@+id/accesoInicioSesion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inicia_sesi_n_aqu"
+                    android:textColor="#007AFF"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

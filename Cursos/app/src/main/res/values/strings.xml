@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Cursos de inducción</string>
+    <string name="ya_tienes_una_cuenta">¿Ya tienes una cuenta?</string>
+    <string name="inicia_sesi_n_aqu">Inicia sesión aquí</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="apellido_s">* Apellido (s):</string>
+    <string name="contrase_a">* Contraseña:</string>
+    <string name="correo_electr_nico">* Correo electrónico:</string>
+    <string name="g_nero">* Género:</string>
+    <string name="nombre_s">* Nombre (s):</string>
+    <string name="ingresa_la_informaci_n_necesaria">Ingresa la información necesaria:</string>
+    <string name="todo">TODO</string>
+    <string name="sexo">Sexo</string>
+    <string name="registro_de_usuario">Registro de usuario</string>
+    <string name="si_usas_m_s_de_un_apellido_ingr_salo">Si usas más de un apellido ingrésalo</string>
+    <string name="usa_una_contrase_a_segura">Usa una contraseña segura</string>
+    <string name="correo_kfc_com">correo@kfc.com</string>
+    <string name="si_tienes_m_s_de_un_nombre_ingr_salo">Si tienes más de un nombre ingrésalo</string>
+    <string-array name="genders_array">
+        <item>Femenino</item>
+        <item>Másculino</item>
+        <item>No binario</item>
+        <item>Otro</item>
+    </string-array>
+</resources>
